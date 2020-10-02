@@ -1,11 +1,9 @@
 # SplittR - Split Your Files!
-# Dorsa Arezooji -- https://Github.com/Dorsa-Arezooji/SplittR
+# Dorsa Arezooji -- https://github.com/Dorsa-Arezooji/SplittR
 
 library(shiny)
 library(shinythemes)
 library(dplyr)
-
-linebreaks <- function(n){HTML(strrep(br(), n))}
 
 ui = fluidPage(
     theme = shinythemes::shinytheme("darkly"),
