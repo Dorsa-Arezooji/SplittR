@@ -95,8 +95,8 @@ server = function(input, output) {
         results = r[[3]]
         file_list = c()
         for (i in 1:input$n_files){
-            write.table(results[[i]], file = paste(i, '.txt'), row.names=FALSE, col.names=FALSE, quote = FALSE)
-            file_list = c(file_list, paste(i, '.txt'))
+            write.table(results[[i]], file = paste0(i, '.txt'), row.names=FALSE, col.names=FALSE, quote = FALSE)
+            file_list = c(file_list, paste0(i, '.txt'))
         }
         zip(zipfile = fname, files = file_list, flags = "-j")
     },
